@@ -2,7 +2,7 @@
 //  ViewController.h
 //  WeatherAppOfPower
 //
-//  Created by Martin Berger on 6/14/17.
+//  Created by Marko Krstanovic on 6/14/17.
 //  Copyright © 2017 heavydebugging.inc. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import "City.h"
 #import "Weather.h"
 
-@interface ViewController : UIViewController //weather view controller
+@interface ViewController : UIViewController
 @property (nonatomic, strong) City *city;
 @property (nonatomic, strong) Weather *weather;
 @property NSDictionary *first;

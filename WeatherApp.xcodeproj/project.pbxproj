@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5BC0BCA91EF13E7200CA3934 /* WeatherAppOfPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppOfPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC0BCA91EF13E7200CA3934 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC0BCAD1EF13E7200CA3934 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BC0BCAF1EF13E7200CA3934 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BC0BCB01EF13E7200CA3934 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		5BC0BCAA1EF13E7200CA3934 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BC0BCA91EF13E7200CA3934 /* WeatherAppOfPower.app */,
+				5BC0BCA91EF13E7200CA3934 /* WeatherApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,8 @@
 				5BC0BCEC1EF3E73400CA3934 /* WeatherService.m */,
 				5BC0BD631F0A259F00CA3934 /* city.list.json */,
 			);
-			path = WeatherAppOfPower;
+			name = WeatherAppOfPower;
+			path = WeatherApp;
 			sourceTree = "<group>";
 		};
 		5BC0BCAC1EF13E7200CA3934 /* Supporting Files */ = {
@@ -129,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BC0BCA81EF13E7200CA3934 /* WeatherAppOfPower */ = {
+		5BC0BCA81EF13E7200CA3934 /* WeatherApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BC0BCC01EF13E7200CA3934 /* Build configuration list for PBXNativeTarget "WeatherAppOfPower" */;
+			buildConfigurationList = 5BC0BCC01EF13E7200CA3934 /* Build configuration list for PBXNativeTarget "WeatherApp" */;
 			buildPhases = (
 				5BC0BCA51EF13E7200CA3934 /* Sources */,
 				5BC0BCA61EF13E7200CA3934 /* Frameworks */,
@@ -141,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = WeatherAppOfPower;
+			name = WeatherApp;
 			productName = WeatherAppOfPower;
-			productReference = 5BC0BCA91EF13E7200CA3934 /* WeatherAppOfPower.app */;
+			productReference = 5BC0BCA91EF13E7200CA3934 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5BC0BCA41EF13E7200CA3934 /* Build configuration list for PBXProject "WeatherAppOfPower" */;
+			buildConfigurationList = 5BC0BCA41EF13E7200CA3934 /* Build configuration list for PBXProject "WeatherApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BC0BCA81EF13E7200CA3934 /* WeatherAppOfPower */,
+				5BC0BCA81EF13E7200CA3934 /* WeatherApp */,
 			);
 		};
 /* End PBXProject section */
@@ -325,8 +326,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BE4CWML7BN;
-				INFOPLIST_FILE = WeatherAppOfPower/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heavydebugging.WeatherAppOfPower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,8 +339,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BE4CWML7BN;
-				INFOPLIST_FILE = WeatherAppOfPower/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heavydebugging.WeatherAppOfPower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BC0BCA41EF13E7200CA3934 /* Build configuration list for PBXProject "WeatherAppOfPower" */ = {
+		5BC0BCA41EF13E7200CA3934 /* Build configuration list for PBXProject "WeatherApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC0BCBE1EF13E7200CA3934 /* Debug */,
@@ -357,13 +360,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BC0BCC01EF13E7200CA3934 /* Build configuration list for PBXNativeTarget "WeatherAppOfPower" */ = {
+		5BC0BCC01EF13E7200CA3934 /* Build configuration list for PBXNativeTarget "WeatherApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BC0BCC11EF13E7200CA3934 /* Debug */,
 				5BC0BCC21EF13E7200CA3934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

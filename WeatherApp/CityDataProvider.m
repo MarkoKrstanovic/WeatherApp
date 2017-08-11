@@ -2,7 +2,7 @@
 //  CityDataProvider.m
 //  WeatherAppOfPower
 //
-//  Created by Martin Berger on 6/29/17.
+//  Created by Marko Krstanovic on 6/29/17.
 //  Copyright © 2017 heavydebugging.inc. All rights reserved.
 //
 

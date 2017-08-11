@@ -2,7 +2,7 @@
 //  Weather.h
 //  WeatherAppOfPower
 //
-//  Created by Martin Berger on 6/14/17.
+//  Created by Marko Krstanovic on 6/14/17.
 //  Copyright © 2017 heavydebugging.inc. All rights reserved.
 //
 
@@ -16,6 +16,5 @@
 @property (strong, nonatomic) NSString *country;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *idName;
-
 - (id)initWithBackendData:(id)data;
 @end
