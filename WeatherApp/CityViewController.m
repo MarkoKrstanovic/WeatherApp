@@ -35,12 +35,6 @@
     self.definesPresentationContext = YES;
     [self.searchController.searchBar sizeToFit];
     
-//    NSMutableArray *index = [NSMutableArray arrayWithObject:UITableViewIndexSearch];
-//
-//    CGRect searchBarFrame = self.searchController.searchBar.frame;
-//    [self.tableView scrollRectToVisible:searchBarFrame animated:NO];
-    
-    
     [super viewDidLoad];
 
     UILocalizedIndexedCollation *theCollation = [UILocalizedIndexedCollation currentCollation];
@@ -121,14 +115,16 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(self.searchResults && _searchController.isActive){
         return 1;
-    } else {
+    } else if(_searchController.isBeingDismissed){
     return [self.cityArray count];
-    }
+    } else
+        return [self.cityArray count];
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(self.searchResults && _searchController.isActive) {
         return [self.searchResults count];
-    }
+    } 
     return [[self.cityArray objectAtIndex:section] count];
 }
 
@@ -153,7 +149,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *viewC  = [storyboard instantiateViewControllerWithIdentifier:@"weather"];
     
-    if(!self.searchResults){
+    if(!_searchController.isActive) {
         NSArray *sectionArray = [self.cityArray objectAtIndex:indexPath.section];
         City *city = [sectionArray objectAtIndex:indexPath.row];
         viewC.city = city;

@@ -11,6 +11,7 @@
 #import "City.h"
 
 @interface CityViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchResultsUpdating, UISearchControllerDelegate, UISearchDisplayDelegate>
+
 @property NSMutableArray *city;
 @property id key;
 @property (strong, nonatomic) NSString *lon;
@@ -28,4 +29,5 @@
 @property (nonatomic, strong) City *city1;
 - (void)filterContentForSearchText:(NSString*)searchText;
 @property NSDictionary *searchDict;
+
 @end

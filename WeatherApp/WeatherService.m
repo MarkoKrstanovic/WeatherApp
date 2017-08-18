@@ -16,7 +16,7 @@
     static WeatherService *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[WeatherService alloc]init];
+        sharedInstance = [[WeatherService alloc] init];
     });
     return sharedInstance;
 

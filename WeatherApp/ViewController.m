@@ -32,17 +32,12 @@
 }
 
 - (void)setUIWithData {
-    CityViewController *viewCont = [[CityViewController alloc]init];
-    if (!viewCont.searchResults) {
         self.idLabel1.text = [NSString stringWithFormat:@"%@", self.city.idName];
         self.nameLabel.text = self.city.name;
         self.latLabel.text = [NSString stringWithFormat:@"%@", self.city.latName];
         self.lonLabel.text = [NSString stringWithFormat:@"%@", self.city.lonName];
         self.presureLabel.text = [NSString stringWithFormat:@"%@", self.weather.presure];
         self.tempLabel.text = [NSString stringWithFormat:@"%@", self.weather.temp];
-    } else {
-        NSLog(@"%@", viewCont.city1.name);
-    }
 }
 
 @end
